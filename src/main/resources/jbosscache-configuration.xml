@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jbosscache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:jboss:jbosscache-core:config:3.2">
+
+   <!-- Configure the TransactionManager -->
+   <transaction transactionManagerLookupClass="org.jboss.cache.transaction.GenericTransactionManagerLookup"/>
+
+   <clustering clusterName="JBossCache-Benchmark">
+      <sync />
+      <jgroupsConfig configFile="jgroups-configuration.xml"/>
+   </clustering>
+</jbosscache>
